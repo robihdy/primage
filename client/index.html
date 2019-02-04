@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Primage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/cover.css">
+  </head>
+
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Primage</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <form id="uploadForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="shape">Choose Shape</label>
+              <select id="shape" class="form-control">
+                <option selected>Combo</option>
+                <option>Triangle</option>
+                <option>Rect</option>
+                <option>Ellipse</option>
+                <option>Circle</option>
+                <option>RotatedRect</option>
+                <option>Beziers</option>
+                <option>RotatedEllipse</option>
+                <option>Polygon</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="numShapes">Number of Shapes</label>
+              <select id="numShapes" class="form-control">
+                <option selected>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+                <option>50</option>
+                <option>100</option>
+                <option>200</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="image">
+                <label class="custom-file-label" for="customFile">Choose Image</label>
+              </div>
+            </div>
+            <div class="form-group col-md-4">
+              <button type="submit" class="btn btn-primary btn-block">Upload</button>
+            </div>
+          </div>
+        </form>
+      </main>
+
+      <div id="result" class="container" hidden>
+          <a id="downloadResult" href="#" class="btn btn-success" hidden>Download</a>
+          <img id="imgResult" src="./images/loading.gif" class="img-fluid" alt="Responsive image">
+      </div>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
